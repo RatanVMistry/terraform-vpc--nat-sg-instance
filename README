@@ -1,0 +1,274 @@
+aws_key_pair.mykeypair: Creating...
+  fingerprint: "" => "<computed>"
+  key_name:    "" => "mykeypair"
+  public_key:  "" => "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDh6VPzdjqVAj0jIXNmqVORNOBpVly4D6io7G1w76Z+JZ++iXOibil58/345rOOwUZ3HDc6x5/HKEcmIHTRTFz9TS8YO77UsgimeajpQTpFIRqksuhbBMeHnEhBY02vqFhhLWhkADSI5h6STpgR+QIue6XScjPj2PpyvknJQF1AD1kwdV5ercitCejqO8kfLN5Jr/d0fJy8V+6NEcTueaBFKNTxEtedNtctAk1Yt07I4AHfptFOKHVDhZGf2AUVGJhJe2hGQw+thuERVc33/6VYGxCiYYflAkLFZsWIg8SH3b21KVFWQhxrr1FNokFEpyUCG8C+tYJUaE7qUdpilfUl ratmistr@RATMISTR-M-K12P"
+aws_eip.nat: Creating...
+  allocation_id:     "" => "<computed>"
+  association_id:    "" => "<computed>"
+  domain:            "" => "<computed>"
+  instance:          "" => "<computed>"
+  network_interface: "" => "<computed>"
+  private_dns:       "" => "<computed>"
+  private_ip:        "" => "<computed>"
+  public_dns:        "" => "<computed>"
+  public_ip:         "" => "<computed>"
+  public_ipv4_pool:  "" => "<computed>"
+  vpc:               "" => "true"
+aws_vpc.main: Creating...
+  arn:                              "" => "<computed>"
+  assign_generated_ipv6_cidr_block: "" => "false"
+  cidr_block:                       "" => "10.0.0.0/16"
+  default_network_acl_id:           "" => "<computed>"
+  default_route_table_id:           "" => "<computed>"
+  default_security_group_id:        "" => "<computed>"
+  dhcp_options_id:                  "" => "<computed>"
+  enable_classiclink:               "" => "false"
+  enable_classiclink_dns_support:   "" => "<computed>"
+  enable_dns_hostnames:             "" => "true"
+  enable_dns_support:               "" => "true"
+  instance_tenancy:                 "" => "default"
+  ipv6_association_id:              "" => "<computed>"
+  ipv6_cidr_block:                  "" => "<computed>"
+  main_route_table_id:              "" => "<computed>"
+  owner_id:                         "" => "<computed>"
+  tags.%:                           "" => "1"
+  tags.Name:                        "" => "main"
+aws_key_pair.mykeypair: Creation complete after 2s (ID: mykeypair)
+aws_eip.nat: Creation complete after 2s (ID: eipalloc-08e5cd49ff8723488)
+aws_vpc.main: Still creating... (10s elapsed)
+aws_vpc.main: Creation complete after 10s (ID: vpc-0deaedea25dfbd116)
+aws_internet_gateway.main-gw: Creating...
+  owner_id:  "" => "<computed>"
+  tags.%:    "0" => "1"
+  tags.Name: "" => "main"
+  vpc_id:    "" => "vpc-0deaedea25dfbd116"
+aws_subnet.main-public-2: Creating...
+  arn:                             "" => "<computed>"
+  assign_ipv6_address_on_creation: "" => "false"
+  availability_zone:               "" => "us-west-2b"
+  availability_zone_id:            "" => "<computed>"
+  cidr_block:                      "" => "10.0.2.0/24"
+  ipv6_cidr_block:                 "" => "<computed>"
+  ipv6_cidr_block_association_id:  "" => "<computed>"
+  map_public_ip_on_launch:         "" => "true"
+  owner_id:                        "" => "<computed>"
+  tags.%:                          "" => "1"
+  tags.Name:                       "" => "main-public-2"
+  vpc_id:                          "" => "vpc-0deaedea25dfbd116"
+aws_subnet.main-public-1: Creating...
+  arn:                             "" => "<computed>"
+  assign_ipv6_address_on_creation: "" => "false"
+  availability_zone:               "" => "us-west-2a"
+  availability_zone_id:            "" => "<computed>"
+  cidr_block:                      "" => "10.0.1.0/24"
+  ipv6_cidr_block:                 "" => "<computed>"
+  ipv6_cidr_block_association_id:  "" => "<computed>"
+  map_public_ip_on_launch:         "" => "true"
+  owner_id:                        "" => "<computed>"
+  tags.%:                          "" => "1"
+  tags.Name:                       "" => "main-public-1"
+  vpc_id:                          "" => "vpc-0deaedea25dfbd116"
+aws_subnet.main-private-3: Creating...
+  arn:                             "" => "<computed>"
+  assign_ipv6_address_on_creation: "" => "false"
+  availability_zone:               "" => "us-west-2c"
+  availability_zone_id:            "" => "<computed>"
+  cidr_block:                      "" => "10.0.6.0/24"
+  ipv6_cidr_block:                 "" => "<computed>"
+  ipv6_cidr_block_association_id:  "" => "<computed>"
+  map_public_ip_on_launch:         "" => "false"
+  owner_id:                        "" => "<computed>"
+  tags.%:                          "" => "1"
+  tags.Name:                       "" => "main-private-3"
+  vpc_id:                          "" => "vpc-0deaedea25dfbd116"
+aws_subnet.main-public-3: Creating...
+  arn:                             "" => "<computed>"
+  assign_ipv6_address_on_creation: "" => "false"
+  availability_zone:               "" => "us-west-2c"
+  availability_zone_id:            "" => "<computed>"
+  cidr_block:                      "" => "10.0.3.0/24"
+  ipv6_cidr_block:                 "" => "<computed>"
+  ipv6_cidr_block_association_id:  "" => "<computed>"
+  map_public_ip_on_launch:         "" => "true"
+  owner_id:                        "" => "<computed>"
+  tags.%:                          "" => "1"
+  tags.Name:                       "" => "main-public-3"
+  vpc_id:                          "" => "vpc-0deaedea25dfbd116"
+aws_subnet.main-private-1: Creating...
+  arn:                             "" => "<computed>"
+  assign_ipv6_address_on_creation: "" => "false"
+  availability_zone:               "" => "us-west-2a"
+  availability_zone_id:            "" => "<computed>"
+  cidr_block:                      "" => "10.0.4.0/24"
+  ipv6_cidr_block:                 "" => "<computed>"
+  ipv6_cidr_block_association_id:  "" => "<computed>"
+  map_public_ip_on_launch:         "" => "false"
+  owner_id:                        "" => "<computed>"
+  tags.%:                          "" => "1"
+  tags.Name:                       "" => "main-private-1"
+  vpc_id:                          "" => "vpc-0deaedea25dfbd116"
+aws_subnet.main-private-2: Creating...
+  arn:                             "" => "<computed>"
+  assign_ipv6_address_on_creation: "" => "false"
+  availability_zone:               "" => "us-west-2b"
+  availability_zone_id:            "" => "<computed>"
+  cidr_block:                      "" => "10.0.5.0/24"
+  ipv6_cidr_block:                 "" => "<computed>"
+  ipv6_cidr_block_association_id:  "" => "<computed>"
+  map_public_ip_on_launch:         "" => "false"
+  owner_id:                        "" => "<computed>"
+  tags.%:                          "" => "1"
+  tags.Name:                       "" => "main-private-2"
+  vpc_id:                          "" => "vpc-0deaedea25dfbd116"
+aws_security_group.allow-ssh: Creating...
+  arn:                                   "" => "<computed>"
+  description:                           "" => "security group that allows ssh and all egress traffic"
+  egress.#:                              "" => "1"
+  egress.482069346.cidr_blocks.#:        "" => "1"
+  egress.482069346.cidr_blocks.0:        "" => "0.0.0.0/0"
+  egress.482069346.description:          "" => ""
+  egress.482069346.from_port:            "" => "0"
+  egress.482069346.ipv6_cidr_blocks.#:   "" => "0"
+  egress.482069346.prefix_list_ids.#:    "" => "0"
+  egress.482069346.protocol:             "" => "-1"
+  egress.482069346.security_groups.#:    "" => "0"
+  egress.482069346.self:                 "" => "false"
+  egress.482069346.to_port:              "" => "0"
+  ingress.#:                             "" => "1"
+  ingress.2541437006.cidr_blocks.#:      "" => "1"
+  ingress.2541437006.cidr_blocks.0:      "" => "0.0.0.0/0"
+  ingress.2541437006.description:        "" => ""
+  ingress.2541437006.from_port:          "" => "22"
+  ingress.2541437006.ipv6_cidr_blocks.#: "" => "0"
+  ingress.2541437006.prefix_list_ids.#:  "" => "0"
+  ingress.2541437006.protocol:           "" => "tcp"
+  ingress.2541437006.security_groups.#:  "" => "0"
+  ingress.2541437006.self:               "" => "false"
+  ingress.2541437006.to_port:            "" => "22"
+  name:                                  "" => "allow-ssh"
+  owner_id:                              "" => "<computed>"
+  revoke_rules_on_delete:                "" => "false"
+  tags.%:                                "" => "1"
+  tags.Name:                             "" => "allow-ssh"
+  vpc_id:                                "" => "vpc-0deaedea25dfbd116"
+aws_subnet.main-private-2: Creation complete after 2s (ID: subnet-04ee7d63ab8397b08)
+aws_subnet.main-private-1: Creation complete after 3s (ID: subnet-04033ecd11a9cd91f)
+aws_subnet.main-private-3: Creation complete after 3s (ID: subnet-0019837782bc1847c)
+aws_internet_gateway.main-gw: Creation complete after 3s (ID: igw-0acda41fc05da5809)
+aws_route_table.main-public: Creating...
+  owner_id:                                   "" => "<computed>"
+  propagating_vgws.#:                         "" => "<computed>"
+  route.#:                                    "" => "1"
+  route.2097793668.cidr_block:                "" => "0.0.0.0/0"
+  route.2097793668.egress_only_gateway_id:    "" => ""
+  route.2097793668.gateway_id:                "" => "igw-0acda41fc05da5809"
+  route.2097793668.instance_id:               "" => ""
+  route.2097793668.ipv6_cidr_block:           "" => ""
+  route.2097793668.nat_gateway_id:            "" => ""
+  route.2097793668.network_interface_id:      "" => ""
+  route.2097793668.transit_gateway_id:        "" => ""
+  route.2097793668.vpc_peering_connection_id: "" => ""
+  tags.%:                                     "" => "1"
+  tags.Name:                                  "" => "main-public-1"
+  vpc_id:                                     "" => "vpc-0deaedea25dfbd116"
+aws_subnet.main-public-3: Creation complete after 3s (ID: subnet-0ccd3c1e6371d8e3f)
+aws_subnet.main-public-1: Creation complete after 3s (ID: subnet-08d7cb790ca0a6499)
+aws_nat_gateway.nat-gw: Creating...
+  allocation_id:        "" => "eipalloc-08e5cd49ff8723488"
+  network_interface_id: "" => "<computed>"
+  private_ip:           "" => "<computed>"
+  public_ip:            "" => "<computed>"
+  subnet_id:            "" => "subnet-08d7cb790ca0a6499"
+aws_subnet.main-public-2: Creation complete after 3s (ID: subnet-030f0645bf5abcccd)
+aws_security_group.allow-ssh: Creation complete after 4s (ID: sg-076fe8fbe50486e8e)
+aws_instance.example: Creating...
+  ami:                               "" => "ami-0ce12824a7ff6de3f"
+  arn:                               "" => "<computed>"
+  associate_public_ip_address:       "" => "<computed>"
+  availability_zone:                 "" => "<computed>"
+  cpu_core_count:                    "" => "<computed>"
+  cpu_threads_per_core:              "" => "<computed>"
+  ebs_block_device.#:                "" => "<computed>"
+  ephemeral_block_device.#:          "" => "<computed>"
+  get_password_data:                 "" => "false"
+  host_id:                           "" => "<computed>"
+  instance_state:                    "" => "<computed>"
+  instance_type:                     "" => "t2.micro"
+  ipv6_address_count:                "" => "<computed>"
+  ipv6_addresses.#:                  "" => "<computed>"
+  key_name:                          "" => "mykeypair"
+  network_interface.#:               "" => "<computed>"
+  network_interface_id:              "" => "<computed>"
+  password_data:                     "" => "<computed>"
+  placement_group:                   "" => "<computed>"
+  primary_network_interface_id:      "" => "<computed>"
+  private_dns:                       "" => "<computed>"
+  private_ip:                        "" => "<computed>"
+  public_dns:                        "" => "<computed>"
+  public_ip:                         "" => "<computed>"
+  root_block_device.#:               "" => "<computed>"
+  security_groups.#:                 "" => "<computed>"
+  source_dest_check:                 "" => "true"
+  subnet_id:                         "" => "subnet-08d7cb790ca0a6499"
+  tenancy:                           "" => "<computed>"
+  volume_tags.%:                     "" => "<computed>"
+  vpc_security_group_ids.#:          "" => "1"
+  vpc_security_group_ids.4011974713: "" => "sg-076fe8fbe50486e8e"
+aws_route_table.main-public: Creation complete after 1s (ID: rtb-0d394e294e722254d)
+aws_route_table_association.main-public-1-a: Creating...
+  route_table_id: "" => "rtb-0d394e294e722254d"
+  subnet_id:      "" => "subnet-08d7cb790ca0a6499"
+aws_route_table_association.main-public-2-a: Creating...
+  route_table_id: "" => "rtb-0d394e294e722254d"
+  subnet_id:      "" => "subnet-030f0645bf5abcccd"
+aws_route_table_association.main-public-3-a: Creating...
+  route_table_id: "" => "rtb-0d394e294e722254d"
+  subnet_id:      "" => "subnet-0ccd3c1e6371d8e3f"
+aws_route_table_association.main-public-3-a: Creation complete after 0s (ID: rtbassoc-0e306a5e765e4d969)
+aws_route_table_association.main-public-1-a: Creation complete after 0s (ID: rtbassoc-0e231df9f095eca12)
+aws_route_table_association.main-public-2-a: Creation complete after 0s (ID: rtbassoc-0eb25444ec324fc26)
+aws_nat_gateway.nat-gw: Still creating... (10s elapsed)
+aws_instance.example: Still creating... (10s elapsed)
+aws_nat_gateway.nat-gw: Still creating... (20s elapsed)
+aws_instance.example: Still creating... (20s elapsed)
+aws_nat_gateway.nat-gw: Still creating... (30s elapsed)
+aws_instance.example: Still creating... (30s elapsed)
+aws_instance.example: Creation complete after 35s (ID: i-015e92c2925012abb)
+aws_nat_gateway.nat-gw: Still creating... (40s elapsed)
+aws_nat_gateway.nat-gw: Still creating... (50s elapsed)
+aws_nat_gateway.nat-gw: Still creating... (1m0s elapsed)
+aws_nat_gateway.nat-gw: Still creating... (1m10s elapsed)
+aws_nat_gateway.nat-gw: Still creating... (1m20s elapsed)
+aws_nat_gateway.nat-gw: Still creating... (1m30s elapsed)
+aws_nat_gateway.nat-gw: Creation complete after 1m39s (ID: nat-050652d663936bb93)
+aws_route_table.main-private: Creating...
+  owner_id:                                   "" => "<computed>"
+  propagating_vgws.#:                         "" => "<computed>"
+  route.#:                                    "" => "1"
+  route.1464633424.cidr_block:                "" => "0.0.0.0/0"
+  route.1464633424.egress_only_gateway_id:    "" => ""
+  route.1464633424.gateway_id:                "" => ""
+  route.1464633424.instance_id:               "" => ""
+  route.1464633424.ipv6_cidr_block:           "" => ""
+  route.1464633424.nat_gateway_id:            "" => "nat-050652d663936bb93"
+  route.1464633424.network_interface_id:      "" => ""
+  route.1464633424.transit_gateway_id:        "" => ""
+  route.1464633424.vpc_peering_connection_id: "" => ""
+  tags.%:                                     "" => "1"
+  tags.Name:                                  "" => "main-private-1"
+  vpc_id:                                     "" => "vpc-0deaedea25dfbd116"
+aws_route_table.main-private: Creation complete after 2s (ID: rtb-0a7bd77eb5d864f02)
+aws_route_table_association.main-private-3-a: Creating...
+  route_table_id: "" => "rtb-0a7bd77eb5d864f02"
+  subnet_id:      "" => "subnet-0019837782bc1847c"
+aws_route_table_association.main-private-1-a: Creating...
+  route_table_id: "" => "rtb-0a7bd77eb5d864f02"
+  subnet_id:      "" => "subnet-04033ecd11a9cd91f"
+aws_route_table_association.main-private-2-a: Creating...
+  route_table_id: "" => "rtb-0a7bd77eb5d864f02"
+  subnet_id:      "" => "subnet-04ee7d63ab8397b08"
+aws_route_table_association.main-private-3-a: Creation complete after 0s (ID: rtbassoc-090008f2611507d77)
+aws_route_table_association.main-private-2-a: Creation complete after 0s (ID: rtbassoc-0a32a1a7013b8345f)
+aws_route_table_association.main-private-1-a: Creation complete after 0s (ID: rtbassoc-023ddeee0c42d0781)
+
+Apply complete! Resources: 21 added, 0 changed, 0 destroyed.
