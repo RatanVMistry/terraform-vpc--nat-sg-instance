@@ -7,6 +7,9 @@
 - nat.tf -  this will create the NAT gate way, as well it create a route table which allow private subnet to get INTERNET connection
 - instance.tf - this will create instance and use the newly created vpc and subnets.
 
+READ about terraform.tfstate and terraform.tfstate.backup how you can use this for maintain state of your infra provisioned by terraform 
+
+
 aws_key_pair.mykeypair: Creating...
   fingerprint: "" => "<computed>"
   key_name:    "" => "mykeypair"
